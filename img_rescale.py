@@ -15,9 +15,10 @@ while True:
     isTure, frame = capture.read()
     
     frame_resized = rescaleFram(frame)
+    flipped_image = cv2.flip(frame_resized,0)
 
     cv2.imshow('Video', frame)
-    cv2.imshow('video resized', frame_resized)
+    cv2.imshow('video resized', flipped_image)
 
     if cv2.waitKey(20) & 0xFF==ord('d'):
         break
