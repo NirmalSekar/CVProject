@@ -35,6 +35,9 @@ ball.goto(0,0)
 ball.dx = 2
 ball.dy = -2
 
+
+
+
 # function to start the game
 
 def paddle_a_up():
